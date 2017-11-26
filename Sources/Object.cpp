@@ -97,7 +97,7 @@ void Object::moveTo(vec3 position) {
 
 void Object::draw(Shader * shader) {
 	mat4 model;
-	model = mat4();
+	model = mat4(1);
 	model = glm::translate(model, dyn.pos);
 	model = glm::scale(model, params);
 	glUniformMatrix4fv(shader->uniform("model"), 1, GL_FALSE, glm::value_ptr(model));

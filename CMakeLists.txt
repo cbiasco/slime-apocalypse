@@ -5,6 +5,7 @@ option(GLFW_BUILD_DOCS OFF)
 option(GLFW_BUILD_EXAMPLES OFF)
 option(GLFW_BUILD_TESTS OFF)
 add_subdirectory(Libraries/glfw)
+add_subdirectory(Libraries/glad/)
 
 #TODO dalton: add assimp if we need real models
 #   and add Model/Mesh.cpp/h when that's done

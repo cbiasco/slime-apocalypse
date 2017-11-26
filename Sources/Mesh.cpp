@@ -47,8 +47,12 @@ void Mesh::updateNormals() {
         double a = glm::length(v1);
         double b = glm::length(v2);
         double c = glm::length(v1 - v2);
-        assert(a > 0 && b > 0);
-        normal = glm::normalize(glm::cross(v2, v1));
+		if (a <= 0 || b <= 0) {
+			normal = glm::vec3(0, 0, 0);
+		}
+		else {
+			normal = glm::normalize(glm::cross(v2, v1));
+		}
         vertices[indices[i]].Normal += normal;
         vertices[indices[i+1]].Normal += normal;
         vertices[indices[i+2]].Normal += normal;
