@@ -17,11 +17,17 @@ git clone --recursive https://github.com/cbiasco/slime-apocalypse.git
 ```
 
 If you do not have Python installed on your computer or the Python executable is not a PATH variable, then you may have build issues. An alternative to those options is to go to http://glad.dav1d.de/ and generate a loader with the following specifications:
+
 	Language = C/C++
+	
 	Specification = OpenGL
+	
 	API = GL 3.3
+	
 	Profile = Compatibility
+	
 	Extensions = ADD ALL (for simplicity's sake)
+	
 Once you have generated the loader, add the src and include directories under {root}/Libraries/glad and things should run from there.
 
 To Build (inside of a Build folder under the root directory):
