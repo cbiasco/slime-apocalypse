@@ -74,6 +74,8 @@ int main() {
     //game_loop_clock->play();
 
     /* Game Loop */
+	scene->toggle_noclip();
+
 	GLfloat fpsTimer = 0;
 	int frameCounter = 0;
 	std::string title = "Slime Apocalypse - FPS: ";
@@ -192,7 +194,7 @@ void handle_input(Gtime::Timer * clock, Scene * handle_scene) {
 	UI::d_scroll = 0;
 
 	glm::vec3 v;
-    if (UI::keys[GLFW_KEY_W] || UI::keys[GLFW_KEY_S] || UI::keys[GLFW_KEY_A] || UI::keys[GLFW_KEY_D]
+    if (UI::keys[GLFW_KEY_W] || UI::keys[GLFW_KEY_S] || UI::keys[GLFW_KEY_A] || UI::keys[GLFW_KEY_D] || UI::keys[GLFW_KEY_Q] || UI::keys[GLFW_KEY_E]
         || UI::keys[GLFW_KEY_UP] || UI::keys[GLFW_KEY_DOWN] || UI::keys[GLFW_KEY_LEFT] || UI::keys[GLFW_KEY_RIGHT]) {
         if (!handle_scene->is_noclip_on) {
             if (UI::keys[GLFW_KEY_W]) {

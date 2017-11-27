@@ -1,5 +1,6 @@
 # slime-apocalypse
-Run away from crowds of 3D deformable slimes. In real-time....
+"Run away from crowds of 3D deformable slimes in real-time..."
+This was our original intent! Currently, it's more of a (bland) demonstration of our implementation of 3D ChainMail.
 
 # Authors
 Dalton Hildreth
